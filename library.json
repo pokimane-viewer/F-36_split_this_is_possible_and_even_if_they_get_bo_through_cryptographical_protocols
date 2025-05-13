@@ -1,0 +1,126 @@
+"""
+∀x (LibrarySample(x) → (Title(x) ∧ Author(x) ∧ DDC(x) ∧ Notes(x)))
+∀x (LibrarySample(x) → |Genres(x)| ≥ 1 ∧ |Tags(x)| ≥ 1)
+∃x (LibrarySample(x) ∧ Genres(x, ‘Nonfiction’))
+
+Each library sample stores a title, author, Dewey Decimal Classification number, and notes that always list at least one genre and one tag.
+
+Such structured examples can seed or test library-catalog software, illustrate DDC usage in data-science courses, or validate JSON-schema and MARC-mapping pipelines for librarians and developers.
+"""
+
+library_samples = [
+    {
+        "Title": "The Women",
+        "Author": "Kristin Hannah",
+        "DDC Number": "813.54",
+        "Notes": "Genres: Fiction, Historical; Tags: historical fiction, female protagonist, nursing"
+    },  # original record retained verbatim
+    {
+        "Title": "Fourth Wing",
+        "Author": "Rebecca Yarros",
+        "DDC Number": "813.6",
+        "Notes": "Genres: Fantasy, Romance; Tags: dragon, strong heroine, battle school"
+    },  # original
+    {
+        "Title": "Atomic Habits",
+        "Author": "James Clear",
+        "DDC Number": "158.1",
+        "Notes": "Genres: Nonfiction, Self-help; Tags: productivity, behavior, psychology"
+    },  # original
+    {
+        "Title": "Killers of the Flower Moon",
+        "Author": "David Grann",
+        "DDC Number": "364.1523",
+        "Notes": "Genres: Nonfiction, True Crime; Tags: FBI, Osage murders, history"
+    },  # original
+    {
+        "Title": "The Great Gatsby",
+        "Author": "F. Scott Fitzgerald",
+        "DDC Number": "813.52",
+        "Notes": "Genres: Fiction, Classic; Tags: roaring twenties, tragedy"
+    },  # :contentReference[oaicite:0]{index=0}
+    {
+        "Title": "Educated",
+        "Author": "Tara Westover",
+        "DDC Number": "270.092",
+        "Notes": "Genres: Nonfiction, Memoir; Tags: education, survivalism, family"
+    },  # :contentReference[oaicite:1]{index=1}
+    {
+        "Title": "Sapiens: A Brief History of Humankind",
+        "Author": "Yuval Noah Harari",
+        "DDC Number": "909",
+        "Notes": "Genres: Nonfiction, History; Tags: anthropology, evolution, culture"
+    },  # :contentReference[oaicite:2]{index=2}
+    {
+        "Title": "Where the Crawdads Sing",
+        "Author": "Delia Owens",
+        "DDC Number": "813.6",
+        "Notes": "Genres: Fiction, Mystery; Tags: coming-of-age, nature, small town"
+    },  # :contentReference[oaicite:3]{index=3}
+    {
+        "Title": "Becoming",
+        "Author": "Michelle Obama",
+        "DDC Number": "328.73092",
+        "Notes": "Genres: Memoir, Politics; Tags: first lady, autobiography, leadership"
+    },  # :contentReference[oaicite:4]{index=4}
+    {
+        "Title": "The Midnight Library",
+        "Author": "Matt Haig",
+        "DDC Number": "823.92",
+        "Notes": "Genres: Fiction, Fantasy; Tags: multiverse, regrets, mental health"
+    },  # :contentReference[oaicite:5]{index=5}
+    {
+        "Title": "Project Hail Mary",
+        "Author": "Andy Weir",
+        "DDC Number": "813.6",
+        "Notes": "Genres: Science Fiction; Tags: space travel, first contact, lone hero"
+    },  # :contentReference[oaicite:6]{index=6}
+    {
+        "Title": "Babel",
+        "Author": "R. F. Kuang",
+        "DDC Number": "813.6",
+        "Notes": "Genres: Fantasy, Historical; Tags: translation, academia, colonialism"
+    },  # :contentReference[oaicite:7]{index=7}
+    {
+        "Title": "The Body Keeps the Score",
+        "Author": "Bessel van der Kolk",
+        "DDC Number": "616.8521",
+        "Notes": "Genres: Nonfiction, Psychology; Tags: trauma, PTSD, neuroscience"
+    },  # :contentReference[oaicite:8]{index=8}
+    {
+        "Title": "Station Eleven",
+        "Author": "Emily St. John Mandel",
+        "DDC Number": "813.6",
+        "Notes": "Genres: Science Fiction, Dystopian; Tags: pandemic, Shakespeare, survival"
+    },  # :contentReference[oaicite:9]{index=9}
+    {
+        "Title": "Dune",
+        "Author": "Frank Herbert",
+        "DDC Number": "813.54",
+        "Notes": "Genres: Science Fiction; Tags: desert planet, politics, ecology"
+    },  # :contentReference[oaicite:10]{index=10}
+    {
+        "Title": "The Catcher in the Rye",
+        "Author": "J. D. Salinger",
+        "DDC Number": "813.54",
+        "Notes": "Genres: Fiction, Coming-of-age; Tags: teenage rebellion, alienation"
+    },  # :contentReference[oaicite:11]{index=11}
+    {
+        "Title": "Harry Potter and the Sorcerer’s Stone",
+        "Author": "J. K. Rowling",
+        "DDC Number": "823.92",
+        "Notes": "Genres: Fantasy, Young Adult; Tags: magic, boarding school, friendship"
+    },  # :contentReference[oaicite:12]{index=12}
+    {
+        "Title": "The Hobbit",
+        "Author": "J. R. R. Tolkien",
+        "DDC Number": "823.912",
+        "Notes": "Genres: Fantasy, Adventure; Tags: dragons, quest, Middle-earth"
+    },  # :contentReference[oaicite:13]{index=13}
+    {
+        "Title": "1984",
+        "Author": "George Orwell",
+        "DDC Number": "823.912",
+        "Notes": "Genres: Dystopian, Political Fiction; Tags: totalitarianism, surveillance, propaganda"
+    }   # :contentReference[oaicite:14]{index=14}
+]

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>matploit lib d3.js. how?</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+<svg width="600" height="400"></svg>
+<script>
+/**
+ * ⊤: (dataLoaded ∧ svgReady) → chartRendered
+ * "If data is loaded and SVG is ready then chart is rendered."
+ */
+function renderChart(data) {
+    const svg = d3.select("svg");
+    const margin = {top: 20, right: 30, bottom: 30, left: 40};
+    const width = +svg.attr("width") - margin.left - margin.right;
+    const height = +svg.attr("height") - margin.top - margin.bottom;
+    const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+    const x = d3.scaleLinear().range([0, width]).domain(d3.extent(data, d => d.x));
+    const y = d3.scaleLinear().range([height, 0]).domain(d3.extent(data, d => d.y));
+    g.append("g").attr("transform", `translate(0,${height})`).call(d3.axisBottom(x));
+    g.append("g").call(d3.axisLeft(y));
+    g.append("path")
+        .datum(data)
+        .attr("fill", "none")
+        .attr("stroke", "steelblue")
+        .attr("stroke-width", 1.5)
+        .attr("d", d3.line()
+            .x(d => x(d.x))
+            .y(d => y(d.y))
+        );
+}
+/**
+ * ⊤: (documentLoaded) → dataPrepared
+ * "When document is loaded then data is prepared."
+ */
+document.addEventListener("DOMContentLoaded", () => {
+    const data = d3.range(50).map((_, i) => ({x: i, y: Math.sin(i / 10)}));
+    renderChart(data);
+});
+</script>
+</body>
+</html>
