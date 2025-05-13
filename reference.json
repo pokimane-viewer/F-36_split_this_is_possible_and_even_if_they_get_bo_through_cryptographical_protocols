@@ -1,0 +1,275 @@
+
+# -------------------------------------------------------------------
+# ----------------------- REAL-WORLD REFERENCE TABLES ---------------
+# -------------------------------------------------------------------
+
+class TableB2BChinaPlatforms:
+    """
+    $p \land (q \rightarrow r)$
+
+    In English: "p AND if q then r."
+
+    Real-world applicability:
+    "We have a reference table of global B2B platforms with a focus on China sourcing (p),
+     and we require that if specific supplier verification data is present (q), then
+     comprehensive buyer protection mechanisms (r) must also be available. This ensures
+     transparency and risk mitigation for complex global sourcing in advanced manufacturing."
+    """
+
+    # Inserted real-world data from text "Table 1: Comparative Analysis of Leading B2B Platforms for China Sourcing".
+    # Keys represent columns/attributes, values represent the textual details.
+    data = [
+        {
+            "Platform Name": "Alibaba.com",
+            "Primary Focus": "General B2B, wide product range",
+            "Key Services (Examples)": "Supplier database, Trade Assurance, logistics support",
+            "Supplier Verification Details": "Gold Supplier, Assessed Supplier (on-site checks by SGS/Intertek)",
+            "Buyer Protection Mechanisms": "Trade Assurance (payment security, dispute resolution, escrow)",
+            "Communication/Language Support": "English platform, direct messaging with suppliers",
+            "Suitability for Advanced/Complex Parts": "Possible, but requires careful vetting for advanced capabilities"
+        },
+        {
+            "Platform Name": "Global Sources",
+            "Primary Focus": "Electronics, hardware, industrial products",
+            "Key Services (Examples)": "Verified suppliers, trade shows, online sourcing",
+            "Supplier Verification Details": "\"Verified Supplier\" badge (3rd party checks), on-site audits",
+            "Buyer Protection Mechanisms": "Buyer protection services, dispute resolution assistance",
+            "Communication/Language Support": "English interface, direct messaging, some multilingual support",
+            "Suitability for Advanced/Complex Parts": "Good potential, includes precision-engineered parts"
+        },
+        {
+            "Platform Name": "Made-in-China.com",
+            "Primary Focus": "Industrial products, machinery, electronics",
+            "Key Services (Examples)": "Supplier audits, TradeMessenger, Secured Trading Service",
+            "Supplier Verification Details": "Audited Suppliers' Reports (SGS, BV, TUV Rheinland)",
+            "Buyer Protection Mechanisms": "Secured Trading Service (STS) - escrow payment",
+            "Communication/Language Support": "English platform, built-in chat tool",
+            "Suitability for Advanced/Complex Parts": "Strong for industrial machinery/components; requires vetting"
+        },
+        {
+            "Platform Name": "DHGate",
+            "Primary Focus": "Smaller wholesale, B2B2C focus",
+            "Key Services (Examples)": "Wholesale pricing, logistics, buyer protection",
+            "Supplier Verification Details": "Has verification, but less transparent than Alibaba/Global Sources",
+            "Buyer Protection Mechanisms": "Buyer protection (refunds for items not as described)",
+            "Communication/Language Support": "English interface",
+            "Suitability for Advanced/Complex Parts": "Less suited for high-precision advanced manufacturing parts"
+        }
+    ]
+
+
+class TableDigitalMaaSPlatforms:
+    """
+    $p \leftrightarrow q$
+
+    In English: "p if and only if q."
+
+    Real-world applicability:
+    "We have a reference table of on-demand manufacturing and MaaS platforms (p),
+     and they are included in the table if and only if they offer significant
+     advanced technology capabilities (q). This ensures alignment with modern
+     manufacturing needs."
+    """
+
+    # Inserted real-world data from text "Table 2: Overview of Key Digital Manufacturing Platforms/MaaS Providers".
+    data = [
+        {
+            "Platform Name": "Xometry",
+            "Key Services": "CNC (3,4,5-axis), 3D printing (metal, plastic), injection molding",
+            "Material Capabilities": "Metals (Al, Steel, Ti), Plastics (ABS, PC, Nylon), some Composites",
+            "Target Industries": "Aerospace, Robotics, Automotive, Medical, Electronics, Energy",
+            "China Operations/Sourcing": "Yes, network includes 10,000+ manufacturers in China",
+            "English/Chinese Support": "Mainly English; Shanghai office handles local ops"
+        },
+        {
+            "Platform Name": "Protolabs Network (Hubs)",
+            "Key Services": "3D printing (various), CNC machining, injection molding, sheet metal",
+            "Material Capabilities": "Wide range of plastics/metals, specifics via platform",
+            "Target Industries": "Aerospace, Automotive, Consumer Electronics, Medical",
+            "China Operations/Sourcing": "\"Global access\"; not explicitly China-based but has network partners",
+            "English/Chinese Support": "Primarily English platform"
+        },
+        {
+            "Platform Name": "Materialise",
+            "Key Services": "Metal 3D printing, Laser Sintering, MJF, FDM, SLA, Consultancy",
+            "Material Capabilities": "Titanium, Inconel, PA12, Ultem, Airbus-qualified materials",
+            "Target Industries": "Aerospace, Medical, Automotive, Consumer Goods",
+            "China Operations/Sourcing": "Not explicitly stated; Europe's largest 3D printing factory",
+            "English/Chinese Support": "English/European languages primarily"
+        },
+        {
+            "Platform Name": "Fictiv",
+            "Key Services": "CNC machining, 3D printing (FDM, SLS, SLA, MJF), injection molding",
+            "Material Capabilities": "Variety of metals/plastics, specifics via quote",
+            "Target Industries": "Aerospace, Robotics, Medical, Automotive, Consumer",
+            "China Operations/Sourcing": "Yes, network includes manufacturers in U.S., China, India, Mexico",
+            "English/Chinese Support": "Primarily English platform"
+        },
+        {
+            "Platform Name": "Shapeways",
+            "Key Services": "3D printing (binder jetting, SLM, SLS, SLA, MJF, FDM), wax casting",
+            "Material Capabilities": "Stainless steel, Al, Cu, precious metals, polymers (Nylon, TPU, ABS)",
+            "Target Industries": "Aerospace, Jewelry, Medical, Robotics, Drones",
+            "China Operations/Sourcing": "Ships globally; main mfg in US/EU",
+            "English/Chinese Support": "Primarily English, not explicitly Chinese"
+        }
+    ]
+
+
+class TableAdvancedManufacturingBooks:
+    """
+    $p \rightarrow (q \land r)$
+
+    In English: "If p then q and r."
+
+    Real-world applicability:
+    "If the resource is part of advanced/smart manufacturing references (p),
+     then it must address Industry 4.0 digitalization (q) and offer practical
+     manufacturing insights (r). This ensures that each listed book covers
+     both conceptual and application-oriented knowledge in advanced manufacturing."
+    """
+
+    # Inserted real-world data from text "Table 3: Selected Recent Books on Advanced & Smart Manufacturing (2020-2025)".
+    data = [
+        {
+            "Title": "Industry 4.0 and Smart Manufacturing: Integrating IoT, AI, and ML in Injection Molding",
+            "Author": "Caleb Cameron",
+            "Year": 2024,
+            "Publisher": "Not specified",
+            "Key Themes": "Industry 4.0, AI/ML, Big Data, predictive maintenance"
+        },
+        {
+            "Title": "Smart Digital Manufacturing: A Guide for Digital Transformation with Real Case Studies Across Industries",
+            "Author": "Rene Wolf & Raffaello Lepratti (Eds.)",
+            "Year": 2020,
+            "Publisher": "Wiley",
+            "Key Themes": "Siemens' Smart Digital Mfg concept, stepwise Industry 4.0 adoption"
+        },
+        {
+            "Title": "Smart Factory: Technologies and Applications in the Post-Pandemic Era (2nd Edition)",
+            "Author": "Michael Deng & Colin Koh",
+            "Year": 2023,
+            "Publisher": "Independently published",
+            "Key Themes": "IIoT, AI, robotics, digital twins, post-pandemic manufacturing"
+        },
+        {
+            "Title": "Handbook of Smart Manufacturing: Forecasting the Future of Industry 4.0",
+            "Author": "Kumar, Singh, Parveen, AlMangour (Eds.)",
+            "Year": "Likely 2022-2024",
+            "Publisher": "CRC Press (implied)",
+            "Key Themes": "Smart mfg dev, AI approaches, cybersecurity, 4D printing"
+        },
+        {
+            "Title": "Artificial Intelligence in Manufacturing: Enabling Intelligent, Flexible, and Cost-Effective Production Through AI",
+            "Author": "John Soldatos (Ed.)",
+            "Year": 2024,
+            "Publisher": "Springer Nature",
+            "Key Themes": "AI for Industry 4.0, digital twins, XAI, human-AI collaboration"
+        }
+    ]
+
+
+class TableSupplyChainBooks:
+    """
+    $(p \lor q) \land (r \lor s)$
+
+    In English: "(p or q) AND (r or s)."
+
+    Real-world applicability:
+    "We require that each supply chain reference either addresses post-pandemic
+     resilience (p) or advanced risk management (q), AND it must discuss either
+     global logistics/digitalization (r) or cross-border disruptions (s). This ensures
+     these books comprehensively cover modern supply chain challenges."
+    """
+
+    # Inserted real-world data from text "Table 4: Selected Recent Books on Supply Chain Management & Logistics (2020-2025)".
+    data = [
+        {
+            "Title": "Flow: How the Best Supply Chains Thrive",
+            "Author": "Rob Handfield & Tom Linton",
+            "Year": 2022,
+            "Publisher": "Not specified",
+            "Key Themes": "Supply continuity, velocity, digital technologies"
+        },
+        {
+            "Title": "The New (Ab)Normal: Reshaping Business and Supply Chain Strategy Beyond Covid-19",
+            "Author": "Yossi Sheffi",
+            "Year": 2020,
+            "Publisher": "MIT CTL Media",
+            "Key Themes": "Pandemic's impact on SCM, resilience, uncertainty management"
+        },
+        {
+            "Title": "Supply Chain Risk Management: How to Design and Manage Resilient Supply Chains",
+            "Author": "John Manners-Bell",
+            "Year": 2020,
+            "Publisher": "Kogan Page (likely)",
+            "Key Themes": "Resilience frameworks, addressing threats (geopolitical, disasters)"
+        },
+        {
+            "Title": "Data Science for Supply Chain Forecasting",
+            "Author": "Nicholas Vandeput",
+            "Year": 2021,
+            "Publisher": "Not specified",
+            "Key Themes": "Big data, analytics, forecasting accuracy"
+        },
+        {
+            "Title": "The Supply Chain Revolution: Innovative Sourcing and Logistics for a Fiercely Competitive World",
+            "Author": "Suman Sarkar",
+            "Year": 2023,
+            "Publisher": "Wiley (likely)",
+            "Key Themes": "Sourcing strategies, logistics best practices, real-life examples"
+        }
+    ]
+
+
+class TableChinaSourcingBooks:
+    """
+    $(p \leftrightarrow q) \land (r \leftrightarrow s)$
+
+    In English: "(p if and only if q) AND (r if and only if s)."
+
+    Real-world applicability:
+    "We have references specifically focused on sourcing from or doing business in China.
+     Each reference (p) matches real-world China manufacturing context (q), and each
+     discusses IP/trade/regulatory frameworks (r) that correspond to actual best practices (s)."
+    """
+
+    # Inserted real-world data from text "Table 5: Selected Recent Books on Sourcing from/Doing Business in China (2020-2025)".
+    data = [
+        {
+            "Title": "'Made In China' Creates New Economic Superpower: Top Manufacturers Share Their Journeys",
+            "Author": "Financial Channel CCTV, TV Programme: The Pillars of a Great Power",
+            "Year": 2020,
+            "Publisher": "Royal Collins Publishing Company",
+            "Key Themes": "Progress of Chinese industry, case studies of domestic manufacturing"
+        },
+        {
+            "Title": "Understanding China's Manufacturing Industry (China Insights Series)",
+            "Author": "Qunhui Huang & Baocui Lou (Translator)",
+            "Year": 2022,
+            "Publisher": "Springer",
+            "Key Themes": "Challenges/prospects of Chinese manufacturing, Sino-US trade impacts"
+        },
+        {
+            "Title": "How To Source Product From China: A Comprehensive Guide",
+            "Author": "Vishal Parikh (Frabon Solutions LLC)",
+            "Year": 2023,
+            "Publisher": "Independently published",
+            "Key Themes": "Supplier identification, negotiation, QC, IP protection"
+        },
+        {
+            "Title": "The China Market Entry Handbook (2023 Edition)",
+            "Author": "Integra Group",
+            "Year": 2023,
+            "Publisher": "Integra Group",
+            "Key Themes": "WFOE vs JV, tax system, compliance, regulatory environment"
+        },
+        {
+            "Title": "Han Kun Blue Book: Doing Business in China - 2024 Comprehensive Guide",
+            "Author": "Han Kun Law Offices",
+            "Year": 2024,
+            "Publisher": "Han Kun Law Offices",
+            "Key Themes": "Chinese legal system, foreign investment law, Revised Company Law"
+        }
+    ]
+

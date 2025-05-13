@@ -1,3 +1,5 @@
+# Not done; it's done when it is, and effort is required. But this type of reduction, and after removing generation you don't want and adding the stuff you do, correcting stuff, etc. 
+
 # OpenAI ChatGPT o3 search
 
 I’ll also provide citations from at least 10 sources as comments referencing where the data came from. I'll aim to add around 20 more book records to provide a diverse sample, including genres like fiction, memoirs, and science fiction.
